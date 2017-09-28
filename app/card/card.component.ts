@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Task } from '../model/task';
+import { AppComponent } from '../app.component';
 
 @Component({
     moduleId: module.id,
@@ -14,4 +15,5 @@ export class CardComponent {
     statusToggle() {
         this.task.completed = !this.task.completed;
     }
+
 }

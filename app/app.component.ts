@@ -9,11 +9,7 @@ import { Task } from './model/task';
 })
 
 export class AppComponent { 
-    private tasks = [
-        new Task("Buy a monkey", false),
-        new Task("Return the monkey", false),
-        new Task("do nothing", true),
-    ]
+    private tasks: Task[] = [];
     private currentTask = new Task(null, false);
 
     addTask() {
@@ -21,5 +17,9 @@ export class AppComponent {
         this.tasks.push(task);
         this.currentTask.content = null;
         this.currentTask.completed = null;
+    }
+
+    removeAll() {
+        this.tasks = [];
     }
 }

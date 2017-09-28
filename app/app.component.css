@@ -7,7 +7,12 @@
 form {
     text-align: center;
 }
-.btn {
+.btn-primary:hover {
+    background-color: #00796B;
+    border-color: #00796B;
+}
+.btn-primary,
+.btn-primary:disabled:hover {
     background-color: #009688;
     border-color: #009688;
     margin-left: 2rem;
@@ -17,4 +22,9 @@ form {
 }
 i {
     padding-right: .5rem;
+}
+h5 {
+    color: #CCC;
+    text-align: center;
+    margin-top: 3rem
 }

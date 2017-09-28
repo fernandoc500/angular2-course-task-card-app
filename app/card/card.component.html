@@ -1,5 +1,8 @@
 <div class="col-sm-3">
     <div class="card"  (click)="statusToggle()" [class.completed]="task.completed">
+        <div class="card-header">
+            <i class="fa fa-times" aria-hidden="true" ></i>
+        </div>
         <div class="card-block">
             <p>{{ task.content }}</p>
         </div>
